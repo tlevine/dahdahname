@@ -1,6 +1,6 @@
-
+import System.Environment (getArgs)
 
 main :: IO ()
 main = do
   argv <- getArgs
-  putStrLn $ lines argv
+  putStrLn $ unlines argv
